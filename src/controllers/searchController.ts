@@ -2,7 +2,6 @@ import {Request, Response} from 'express';
 
 import { Pet } from '../models/pet';
 import {createMenuObjetct} from '../helpers/createMenuObject';
-import { read } from 'fs';
 
 export const search = (req:Request, res:Response) =>{
     let query: string = req.query.q as string;
